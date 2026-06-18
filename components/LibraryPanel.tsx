@@ -30,7 +30,7 @@ export default function LibraryPanel({
   lblColor,
 }: LibraryPanelProps) {
   return (
-    <div className={`rounded-2xl p-4 w-80 flex flex-col space-y-4 shadow-xl max-h-[80vh] overflow-y-auto border transition-all duration-350 ${panelClass}`}>
+    <div className={`rounded-2xl p-4 w-full max-w-sm md:w-80 flex flex-col space-y-4 shadow-xl max-h-[80vh] overflow-y-auto border transition-all duration-350 ${panelClass}`}>
       <div className="text-xs font-mono tracking-widest font-bold uppercase">Bibliothèque</div>
       {recentBooks.length > 0 && (
         <div className="space-y-1.5">

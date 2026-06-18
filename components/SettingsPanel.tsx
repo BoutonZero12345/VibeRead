@@ -28,7 +28,7 @@ export default function SettingsPanel({
   panelClass, btnActive, btnInactive, lblColor, accentCls,
 }: SettingsPanelProps) {
   return (
-    <div className={`rounded-2xl p-5 w-64 flex flex-col space-y-3.5 shadow-xl border transition-all duration-350 ${panelClass}`}>
+    <div className={`rounded-2xl p-5 w-full max-w-xs md:w-64 flex flex-col space-y-3.5 shadow-xl border transition-all duration-350 ${panelClass}`}>
       <div className="text-xs font-mono tracking-widest font-bold uppercase">Mise en page</div>
       <div className="space-y-1">
         <label className={`text-[10px] uppercase tracking-wider ${lblColor}`}>Theme</label>

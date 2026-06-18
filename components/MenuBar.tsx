@@ -9,6 +9,7 @@ interface MenuBarProps {
   activeBookId: number | null;
   isCtrlPressed: boolean;
   onOpenLibrary: () => void;
+  isDarkMode?: boolean;
 }
 
 export default function MenuBar({
@@ -19,10 +20,15 @@ export default function MenuBar({
   activeBookId,
   isCtrlPressed,
   onOpenLibrary,
+  isDarkMode = false,
 }: MenuBarProps) {
   const btnClass = isCtrlPressed
     ? "bg-white text-black border-transparent font-bold shadow-md"
-    : "glass-panel text-white/80 hover:text-white";
+    : activeBookId !== null
+      ? isDarkMode
+        ? "bg-zinc-900/80 text-zinc-100 border-zinc-800 hover:bg-zinc-800"
+        : "bg-zinc-100/90 text-zinc-800 border-zinc-200 hover:bg-zinc-200"
+      : "glass-panel text-white/80 hover:text-white";
 
   return (
     <div className="flex space-x-2">

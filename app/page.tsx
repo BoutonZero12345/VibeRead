@@ -130,7 +130,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen w-full overflow-hidden flex">
       <BackgroundVideo videoId="G1hKzCkywM8" />
-      <div className="w-full h-screen grid relative z-10 transition-all duration-500"
+      <div className={`w-full h-screen transition-all duration-500 ${activeBookId !== null ? "grid reader-grid" : "hidden md:grid"} relative z-10`}
         style={{ gridTemplateColumns: activeBookId !== null ? `1fr min(100%, ${columnWidth}px) 1fr` : `1fr 0px 1fr` }}>
         <div className="hidden md:block" />
         <div ref={scrollContainerRef} onScroll={handleScroll}
@@ -144,15 +144,39 @@ export default function Home() {
         <div className="hidden md:block" />
       </div>
 
-      <div className="absolute top-6 right-6 z-30 flex flex-col items-end space-y-3">
-        <MenuBar showLibrary={showLibrary} setShowLibrary={setShowLibrary} showSettings={showSettings} setShowSettings={setShowSettings} activeBookId={activeBookId} isCtrlPressed={isCtrlPressed} onOpenLibrary={handleOpenLibrary} />
-        {showLibrary && (
-          <LibraryPanel books={books} recentBooks={recentBooks} activeBookId={activeBookId} selectBook={selectBook} bookStatuses={bookStatuses} onChangeStatus={handleChangeStatus} isCtrlPressed={isCtrlPressed} isDarkMode={isDarkMode} panelClass={panelClass} btnActive={btnActive} lblColor={lblColor} />
-        )}
-        {showSettings && activeBookId !== null && (
-          <SettingsPanel fontSize={fontSize} setFontSize={setFontSize} lineHeight={lineHeight} setLineHeight={setLineHeight} fontFamily={fontFamily} setFontFamily={setFontFamily} columnWidth={columnWidth} setColumnWidth={setColumnWidth} textPadding={textPadding} setTextPadding={setTextPadding} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} updateVal={updateVal} panelClass={panelClass} btnActive={btnActive} btnInactive={btnInactive} lblColor={lblColor} accentCls={accentCls} />
-        )}
+      {/* Mobile Header Bar */}
+      {activeBookId !== null && (
+        <div className={`md:hidden fixed top-0 left-0 right-0 h-14 z-30 flex items-center justify-between px-4 border-b transition-colors duration-500 ${
+          isDarkMode ? "bg-zinc-950/95 border-zinc-800 text-zinc-100" : "bg-white/95 border-zinc-200 text-zinc-900"
+        }`}>
+          <button onClick={closeBook} className="flex items-center space-x-1 text-sm font-semibold hover:opacity-80 truncate pr-4">
+            <span className="text-base">←</span>
+            <span className="truncate max-w-[180px]">{activeBook?.title}</span>
+          </button>
+          <MenuBar showLibrary={showLibrary} setShowLibrary={setShowLibrary} showSettings={showSettings} setShowSettings={setShowSettings} activeBookId={activeBookId} isCtrlPressed={isCtrlPressed} onOpenLibrary={handleOpenLibrary} isDarkMode={isDarkMode} />
+        </div>
+      )}
+
+      {/* Floating Menu Bar (Desktop and Home Screen Mobile) */}
+      <div className={`absolute top-6 right-6 z-30 ${activeBookId !== null ? "hidden md:block" : "block"}`}>
+        <MenuBar showLibrary={showLibrary} setShowLibrary={setShowLibrary} showSettings={showSettings} setShowSettings={setShowSettings} activeBookId={activeBookId} isCtrlPressed={isCtrlPressed} onOpenLibrary={handleOpenLibrary} isDarkMode={isDarkMode} />
       </div>
+
+      {/* Panels container */}
+      {(showLibrary || showSettings) && (
+        <div className={`fixed z-30 flex flex-col items-end space-y-3 ${
+          activeBookId !== null 
+            ? "top-16 right-4 left-4 md:absolute md:top-20 md:right-6 md:left-auto" 
+            : "top-20 right-6 left-6 md:absolute md:top-20 md:right-6 md:left-auto"
+        }`}>
+          {showLibrary && (
+            <LibraryPanel books={books} recentBooks={recentBooks} activeBookId={activeBookId} selectBook={selectBook} bookStatuses={bookStatuses} onChangeStatus={handleChangeStatus} isCtrlPressed={isCtrlPressed} isDarkMode={isDarkMode} panelClass={panelClass} btnActive={btnActive} lblColor={lblColor} />
+          )}
+          {showSettings && activeBookId !== null && (
+            <SettingsPanel fontSize={fontSize} setFontSize={setFontSize} lineHeight={lineHeight} setLineHeight={setLineHeight} fontFamily={fontFamily} setFontFamily={setFontFamily} columnWidth={columnWidth} setColumnWidth={setColumnWidth} textPadding={textPadding} setTextPadding={setTextPadding} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} updateVal={updateVal} panelClass={panelClass} btnActive={btnActive} btnInactive={btnInactive} lblColor={lblColor} accentCls={accentCls} />
+          )}
+        </div>
+      )}
     </main>
   );
 }

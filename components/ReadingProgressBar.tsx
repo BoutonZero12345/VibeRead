@@ -76,6 +76,34 @@ export default function ReadingProgressBar({ scrollContainerRef, isDarkMode }: R
     window.addEventListener("mouseup", onMouseUp);
   };
 
+  const handleThumbTouchStart = (e: React.TouchEvent) => {
+    e.stopPropagation();
+    isDragging.current = true;
+    const touch = e.touches[0];
+    dragStartY.current = touch.clientY;
+    dragStartScrollTop.current = scrollContainerRef.current?.scrollTop ?? 0;
+
+    const onTouchMove = (ev: TouchEvent) => {
+      const el = scrollContainerRef.current;
+      const track = trackRef.current;
+      if (!el || !track) return;
+      const t = ev.touches[0];
+      const delta = t.clientY - dragStartY.current;
+      const trackH = track.clientHeight - thumbHeight;
+      const scrollRatio = delta / trackH;
+      el.scrollTop = dragStartScrollTop.current + scrollRatio * (el.scrollHeight - el.clientHeight);
+    };
+
+    const onTouchEnd = () => {
+      isDragging.current = false;
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchend", onTouchEnd);
+    };
+
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
+    window.addEventListener("touchend", onTouchEnd);
+  };
+
   const trackBg = isDarkMode ? "bg-zinc-800/60" : "bg-zinc-200/80";
   const thumbBg = isDarkMode ? "bg-zinc-500 hover:bg-zinc-300" : "bg-zinc-400 hover:bg-zinc-600";
 
@@ -87,6 +115,7 @@ export default function ReadingProgressBar({ scrollContainerRef, isDarkMode }: R
     >
       <div
         onMouseDown={handleThumbMouseDown}
+        onTouchStart={handleThumbTouchStart}
         className={`absolute left-0.5 right-0.5 rounded-full cursor-grab active:cursor-grabbing transition-colors ${thumbBg}`}
         style={{ top: thumbTop, height: thumbHeight }}
       />

@@ -74,3 +74,15 @@
 .epub-container {
   overflow-anchor: none !important;
 }
+
+/* Responsive adjustments for mobile viewports */
+@media (max-width: 767px) {
+  .reader-grid {
+    display: block !important;
+  }
+  
+  .reader-scroll {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}

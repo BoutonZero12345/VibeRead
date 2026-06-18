@@ -23,6 +23,7 @@ function injectStylesIntoView(view: any, fontName: string, fontSize: number, lin
   if (!doc) return;
   const existing = doc.getElementById("viberead-override");
   if (existing) existing.remove();
+  const effectivePadding = typeof window !== "undefined" && window.innerWidth < 768 ? 16 : textPadding;
   const style = doc.createElement("style");
   style.id = "viberead-override";
   style.innerHTML = `
@@ -36,8 +37,8 @@ function injectStylesIntoView(view: any, fontName: string, fontSize: number, lin
     html, body {
       background-color: ${isDarkMode ? "#09090b" : "#ffffff"} !important;
       color: ${isDarkMode ? "#f4f4f5" : "#18181b"} !important;
-      padding-left: ${textPadding}px !important;
-      padding-right: ${textPadding}px !important;
+      padding-left: ${effectivePadding}px !important;
+      padding-right: ${effectivePadding}px !important;
     }
     p { text-align: justify !important; margin-bottom: 1.5em !important; }
   `;

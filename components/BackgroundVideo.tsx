@@ -30,7 +30,7 @@ export default function BackgroundVideo({ videoId }: BackgroundVideoProps) {
       // Create a div placeholder that YT API will replace with the iframe
       const playerDiv = document.createElement("div");
       playerDiv.id = "yt-player";
-      playerDiv.className = "absolute top-1/2 left-1/2 w-[120vw] h-[120vh] min-w-[177.77vh] min-h-[56.25vw] -translate-x-1/2 -translate-y-1/2 scale-125 object-cover pointer-events-none border-0";
+      playerDiv.className = "absolute top-1/2 left-1/2 w-[115vw] h-[64.7vw] min-h-[115vh] min-w-[204.5vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none border-0";
       
       containerRef.current.innerHTML = "";
       containerRef.current.appendChild(playerDiv);

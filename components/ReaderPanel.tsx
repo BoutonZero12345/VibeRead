@@ -34,7 +34,7 @@ export default function ReaderPanel({
 }: ReaderPanelProps) {
   return (
     <>
-      <button onClick={closeBook} className={`absolute top-4 right-4 p-2 rounded-full transition-colors z-20 ${
+      <button onClick={closeBook} className={`hidden md:block absolute top-4 right-4 p-2 rounded-full transition-colors z-20 ${
         isDarkMode ? "text-zinc-500 hover:text-zinc-300 hover:bg-zinc-900" : "text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100"
       }`}>
         <X className="w-5 h-5" />
