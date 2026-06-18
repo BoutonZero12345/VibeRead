@@ -1,0 +1,60 @@
+# ===========================
+# Dépendances
+# ===========================
+node_modules/
+
+# ===========================
+# Next.js build
+# ===========================
+.next/
+out/
+
+# ===========================
+# Env & secrets
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================
+# Logs
+# ===========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ===========================
+# OS & éditeurs
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ===========================
+# TypeScript
+# ===========================
+*.tsbuildinfo
+next-env.d.ts
+
+# ===========================
+# Archives & gros fichiers inutiles
+# ===========================
+*.zip
+*.tar.gz
+*.rar
+
+# ===========================
+# EPUB reader cache
+# ===========================
+.cache/
+
+# ===========================
+# Livres : on les GARDE dans Git
+# livres/*.epub  <-- volontairement non ignoré
+# livres/all_books.json <-- volontairement non ignoré
+# ===========================

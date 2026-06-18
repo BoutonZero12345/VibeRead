@@ -1,0 +1,604 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Comment se faire des amis",
+            "author": "Dale Carnegie",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 2,
+            "title": "Les 4 accords toltèques",
+            "author": "Don Miguel Ruiz",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 3,
+            "title": "The One Thing",
+            "author": "Gary Keller",
+            "category": "Productivité"
+        },
+        {
+            "id": 4,
+            "title": "Réfléchissez et devenez riche",
+            "author": "Napoleon Hill",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 5,
+            "title": "Pouvoir illimité",
+            "author": "Anthony Robbins",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 6,
+            "title": "L'éveil de votre puissance intérieure",
+            "author": "Anthony Robbins",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 7,
+            "title": "Père riche, père pauvre",
+            "author": "Robert Kiyosaki",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 8,
+            "title": "Les 7 habitudes de ceux qui réalisent tout ce qu'ils entreprennent",
+            "author": "Stephen R. Covey",
+            "category": "Productivité"
+        },
+        {
+            "id": 9,
+            "title": "L'Alchimiste",
+            "author": "Paulo Coelho",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 10,
+            "title": "Le moine qui vendit sa Ferrari",
+            "author": "Robin Sharma",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 11,
+            "title": "La semaine de 4 heures",
+            "author": "Timothy Ferriss",
+            "category": "Productivité"
+        },
+        {
+            "id": 12,
+            "title": "L'art subtil de s'en foutre",
+            "author": "Mark Manson",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 13,
+            "title": "Atomic Habits (Un rien peut tout changer)",
+            "author": "James Clear",
+            "category": "Productivité"
+        },
+        {
+            "id": 14,
+            "title": "Le pouvoir du moment présent",
+            "author": "Eckhart Tolle",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 15,
+            "title": "Influence et manipulation",
+            "author": "Robert Cialdini",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 16,
+            "title": "L'homme le plus riche de Babylone",
+            "author": "George S. Clason",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 17,
+            "title": "Tout le monde n'a pas eu la chance de rater ses études",
+            "author": "Olivier Roland",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 18,
+            "title": "Système 1 / Système 2 : Les deux vitesses de la pensée",
+            "author": "Daniel Kahneman",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 19,
+            "title": "L'intelligence émotionnelle",
+            "author": "Daniel Goleman",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 20,
+            "title": "La magie de voir grand",
+            "author": "David J. Schwartz",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 21,
+            "title": "Mindset : L'état d'esprit de la réussite",
+            "author": "Carol S. Dweck",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 22,
+            "title": "Miracle Morning",
+            "author": "Hal Elrod",
+            "category": "Productivité"
+        },
+        {
+            "id": 23,
+            "title": "Sapiens : Une brève histoire de l'humanité",
+            "author": "Yuval Noah Harari",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 24,
+            "title": "Pensez et agissez comme un chat",
+            "author": "Stéphane Garnier",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 25,
+            "title": "Essentialisme : Faire moins mais mieux",
+            "author": "Greg McKeown",
+            "category": "Productivité"
+        },
+        {
+            "id": 26,
+            "title": "Deep Work : Retrouver la concentration dans un monde de distractions",
+            "author": "Cal Newport",
+            "category": "Productivité"
+        },
+        {
+            "id": 27,
+            "title": "Les 5 langages de l'amour",
+            "author": "Gary Chapman",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 28,
+            "title": "Le principe 80/20",
+            "author": "Richard Koch",
+            "category": "Productivité"
+        },
+        {
+            "id": 29,
+            "title": "La règle des 5 secondes",
+            "author": "Mel Robbins",
+            "category": "Productivité"
+        },
+        {
+            "id": 30,
+            "title": "Start With Why (Trouver son pourquoi)",
+            "author": "Simon Sinek",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 31,
+            "title": "L'obstacle est le chemin",
+            "author": "Ryan Holiday",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 32,
+            "title": "L'ego est l'ennemi",
+            "author": "Ryan Holiday",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 33,
+            "title": "Pensées pour moi-même",
+            "author": "Marc Aurèle",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 34,
+            "title": "Le pouvoir des habitudes",
+            "author": "Charles Duhigg",
+            "category": "Productivité"
+        },
+        {
+            "id": 35,
+            "title": "S'organiser pour réussir (Getting Things Done)",
+            "author": "David Allen",
+            "category": "Productivité"
+        },
+        {
+            "id": 36,
+            "title": "Ne coupez jamais la poire en deux",
+            "author": "Chris Voss",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 37,
+            "title": "Stratégie Océan Bleu",
+            "author": "W. Chan Kim",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 38,
+            "title": "Lean Startup",
+            "author": "Eric Ries",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 39,
+            "title": "De la performance à l'excellence (Good to Great)",
+            "author": "Jim Collins",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 40,
+            "title": "Le quadrant du cashflow",
+            "author": "Robert Kiyosaki",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 41,
+            "title": "Ta deuxième vie commence quand tu comprends que tu n'en as qu'une",
+            "author": "Raphaëlle Giordano",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 42,
+            "title": "Le secret",
+            "author": "Rhonda Byrne",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 43,
+            "title": "Les lois de la nature humaine",
+            "author": "Robert Greene",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 44,
+            "title": "Power : Les 48 lois du pouvoir",
+            "author": "Robert Greene",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 45,
+            "title": "Atteindre l'excellence (Mastery)",
+            "author": "Robert Greene",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 46,
+            "title": "L'art de la guerre",
+            "author": "Sun Tzu",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 47,
+            "title": "Le cygne noir",
+            "author": "Nassim Nicholas Taleb",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 48,
+            "title": "Antifragile",
+            "author": "Nassim Nicholas Taleb",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 49,
+            "title": "La cinquième alliance",
+            "author": "Don Miguel Ruiz",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 50,
+            "title": "Le pouvoir de l'intention",
+            "author": "Wayne Dyer",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 51,
+            "title": "Vos zones erronées",
+            "author": "Wayne Dyer",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 52,
+            "title": "Kilomètre Zéro",
+            "author": "Maud Ankaoua",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 53,
+            "title": "Respirez",
+            "author": "James Nestor",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 54,
+            "title": "L'homme est le reflet de ses pensées",
+            "author": "James Allen",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 55,
+            "title": "La science de l'enrichissement",
+            "author": "Wallace D. Wattles",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 56,
+            "title": "Le pouvoir de la vulnérabilité",
+            "author": "Brené Brown",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 57,
+            "title": "Oser (Daring Greatly)",
+            "author": "Brené Brown",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 58,
+            "title": "Les mots sont des fenêtres (ou bien ce sont des murs)",
+            "author": "Marshall B. Rosenberg",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 59,
+            "title": "Conversations cruciales",
+            "author": "Kerry Patterson",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 60,
+            "title": "L'art de se lancer",
+            "author": "Guy Kawasaki",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 61,
+            "title": "Rework",
+            "author": "Jason Fried",
+            "category": "Productivité"
+        },
+        {
+            "id": 62,
+            "title": "Outliers (La loi des prodiges)",
+            "author": "Malcolm Gladwell",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 63,
+            "title": "Le point de bascule",
+            "author": "Malcolm Gladwell",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 64,
+            "title": "Zéro à Un",
+            "author": "Peter Thiel",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 65,
+            "title": "L'entreprise du 21e siècle",
+            "author": "Robert Kiyosaki",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 66,
+            "title": "La vérité sur ce qui nous motive",
+            "author": "Daniel H. Pink",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 67,
+            "title": "Le pouvoir de la confiance",
+            "author": "Stephen M.R. Covey",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 68,
+            "title": "Savoir écouter",
+            "author": "Carl Rogers",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 69,
+            "title": "Cessez d'être gentil, soyez vrai",
+            "author": "Thomas d'Ansembourg",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 70,
+            "title": "Les outils des géants",
+            "author": "Timothy Ferriss",
+            "category": "Productivité"
+        },
+        {
+            "id": 71,
+            "title": "La tribu des mentors",
+            "author": "Timothy Ferriss",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 72,
+            "title": "Psycho-Cybernétique",
+            "author": "Maxwell Maltz",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 73,
+            "title": "L'almanach de Naval Ravikant",
+            "author": "Eric Jorgenson",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 74,
+            "title": "Shoe Dog (L'art de la victoire)",
+            "author": "Phil Knight",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 75,
+            "title": "Steve Jobs",
+            "author": "Walter Isaacson",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 76,
+            "title": "Elon Musk",
+            "author": "Ashlee Vance",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 77,
+            "title": "L'effet cumulé",
+            "author": "Darren Hardy",
+            "category": "Productivité"
+        },
+        {
+            "id": 78,
+            "title": "Avalez le crapaud !",
+            "author": "Brian Tracy",
+            "category": "Productivité"
+        },
+        {
+            "id": 79,
+            "title": "La psychologie de l'argent",
+            "author": "Morgan Housel",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 80,
+            "title": "Les principes du succès",
+            "author": "Ray Dalio",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 81,
+            "title": "Tribus",
+            "author": "Seth Godin",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 82,
+            "title": "La vache pourpre",
+            "author": "Seth Godin",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 83,
+            "title": "Faites votre lit",
+            "author": "William H. McRaven",
+            "category": "Productivité"
+        },
+        {
+            "id": 84,
+            "title": "Unf*ck Yourself",
+            "author": "Gary John Bishop",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 85,
+            "title": "Le bonheur selon Confucius",
+            "author": "Yu Dan",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 86,
+            "title": "Ikigai",
+            "author": "Héctor García",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 87,
+            "title": "12 règles pour une vie",
+            "author": "Jordan B. Peterson",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 88,
+            "title": "Can't Hurt Me",
+            "author": "David Goggins",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 89,
+            "title": "Le design de votre vie",
+            "author": "Bill Burnett",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 90,
+            "title": "Le personal MBA",
+            "author": "Josh Kaufman",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 91,
+            "title": "Factfulness",
+            "author": "Hans Rosling",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 92,
+            "title": "Quiet (La force des discrets)",
+            "author": "Susan Cain",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 93,
+            "title": "Drive",
+            "author": "Daniel H. Pink",
+            "category": "Productivité"
+        },
+        {
+            "id": 94,
+            "title": "Switch",
+            "author": "Chip Heath",
+            "category": "Productivité"
+        },
+        {
+            "id": 95,
+            "title": "Range",
+            "author": "David Epstein",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 96,
+            "title": "Présence",
+            "author": "Amy Cuddy",
+            "category": "Mindset & Philosophie"
+        },
+        {
+            "id": 97,
+            "title": "Le charisme à l'état pur",
+            "author": "Olivia Fox Cabane",
+            "category": "Relations Humaines"
+        },
+        {
+            "id": 98,
+            "title": "Agir et réussir",
+            "author": "Richard Branson",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 99,
+            "title": "L'investisseur intelligent",
+            "author": "Benjamin Graham",
+            "category": "Succès & Finances"
+        },
+        {
+            "id": 100,
+            "title": "Découvrir un sens à sa vie",
+            "author": "Viktor E. Frankl",
+            "category": "Mindset & Philosophie"
+        }
+    ]
+}
